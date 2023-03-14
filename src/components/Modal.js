@@ -1,9 +1,9 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';//add reducer by use dispatch
 import { clearCart } from '../features/cart/cartSlice';
 import { closeModal } from '../features/modal/modalSlice';
 
 const Modal = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch();  //add reducer by use dispatch
   return (
     <aside className='modal-container'>
       <div className='modal'>
@@ -13,7 +13,7 @@ const Modal = () => {
             type='button'
             className='btn confirm-btn'
             onClick={() => {
-              dispatch(clearCart());
+              dispatch(clearCart());//dispatch clear button with the reducers ClearCart
               dispatch(closeModal());
             }}
           >

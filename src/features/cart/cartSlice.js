@@ -13,7 +13,7 @@ const cartSlice = createSlice({
   reducers: {
     clearCart: (state) => {
       // state.cartItems = [];
-      return { cartItems: []}
+      return { cartItems: []}//Reducer to clear the card   those are action creator
     },
 
     removeItem :(state,action) =>{
@@ -55,6 +55,8 @@ const cartSlice = createSlice({
 
 // console.log(cartSlice);
 
-export const {clearCart,removeItem,increase,decrease,calculateTotals} = cartSlice.actions;
+export const {clearCart,removeItem,increase,decrease,calculateTotals} = cartSlice.actions;  //exports all the reducers 
+//because they are actions creator and exports them by using useDispatch and dicide in wich components we are going 
+//to use them
 
 export default cartSlice.reducer
