@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';//add reducer by use dispatch
-import { clearCart } from '../features/cart/cartSlice';
+import { clearCart } from '../features/cart/cartSlice'; //add reducer by use dispatch
 import { closeModal } from '../features/modal/modalSlice';
 
 const Modal = () => {
